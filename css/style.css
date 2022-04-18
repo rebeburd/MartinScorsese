@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    margin:0; 
+    padding:0; 
+    font-family: 'Lato', sans-serif;
+} 
+
+body {
+    background-color:ghostwhite;
+}
+
+/*HEADER*/
+
+header{
+    background-color: ghostwhite;
+    box-shadow: 0 0 15px rgba(0,0,0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li{
+    list-style-type: none;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 5px;
+    display:inline;
+}
+
+nav{
+    margin-top: 10px;
+}
+
+h1{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+/* BODY */
+#mainimage{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    height: 80%;
+}
+
+#subtitle1{
+    text-align:center;
+}
+
+/*HOME*/
+.gridhome1{
+    display: inline-grid;
+    width: 100%;
+    align-items: center;
+}
+
+.imghome {
+    width:350px;
+    height:150px;
+    box-shadow: 0 0 15px rgba(0,0,0.5);
+}
+
+.subtitle1{
+    text-align: center;
+}
+
+#comunidadhome{
+    background-color: rgb(111, 0, 0);
+}
+
+#discover{
+    background-image: linear-gradient(to right, white,grey);
+}
+
+.gridhome2{
+    display: grid;
+    grid-row: repeat(2, 1fr);
+    grid-column: repeat(3, 1fr);
+    grid-template-areas:
+    "
+    1 2 3
+    4 5 6
+    "
+    ;
+    gap: 5%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+#gridhome2el1{
+    grid-area: 1 2 3;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+}
+
+#gridhome2el2{
+    grid-area: 4;
+    text-align: center;
+    align-content: center;
+}
+
+#gridhome2el3{
+    grid-area: 5;
+    text-align: center;
+    align-content: center;
+}
+
+#gridhome2el4{
+    grid-area: 6;
+    text-align: center;
+    align-content: center;
+}
+
+.gridhome2style{
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 768px){
+    .gridhome2{
+        display: inline-grid;
+        justify-content: center;
+        align-self: center;
+    }
+}
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    display: grid;
+    grid-column: 1fr;
+    grid-row: repeat(3, 1fr);
+    grid-template-areas:
+    "
+    1
+    2
+    3
+    "
+    ;
+    justify-items: center;
+    align-items: center;
+}
+
+#gridfooter1{
+    grid-area: 1;
+    align-self: center;
+}
+
+#gridfooter2{
+    grid-area: 2;
+}
+
+#gridfooter3{
+    grid-area: 3;
+}
+
+.socialmedialogo{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+
+.credit{
+    text-align: center;
+    color:white;
+}
+
+/* FILMOGRAFÍA */
+section#films{
+    display:flex;
+    justify-content: space-evenly;
+    overflow: scroll;
+}
+
+.poster{
+    width: 150px;
+    height: 275px;
+}
+
+/* BIOGRAFÍA */
+.gridbio1{
+    display: inline-grid;
+    justify-content: center;
+}
