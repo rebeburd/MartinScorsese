@@ -13,11 +13,23 @@ body {
 /*HEADER*/
 
 header{
-    background-color: black;
+    background-color: darkgrey;
     box-shadow: 0 0 15px rgba(0,0,0.5);
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+}
+
+.navbar-navbar-expand-lgnavbar-darkbg-dark{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-brand{
+    align-items: left;
+}
+
+.navbar-nav{
+    align-items: right;
 }
 
 li{
@@ -27,10 +39,6 @@ li{
     margin-top: 5px;
     display:inline;
     color: white;
-}
-
-nav{
-    margin-top: 10px;
 }
 
 h1{
@@ -190,10 +198,12 @@ footer{
 
 #gridfooter2{
     grid-area: 2;
+    align-self: center;
 }
 
 #gridfooter3{
     grid-area: 3;
+    align-self: center;
 }
 
 .credit{
@@ -240,8 +250,8 @@ section#films{
     height: 275px;
 }
 
-/* BIOGRAFÍA */
-.gridbio1{
-    display: inline-grid;
-    justify-content: center;
+/* COMUNIDAD */
+
+form{
+    align-content: center;
 }
