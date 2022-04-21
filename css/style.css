@@ -24,14 +24,6 @@ header{
     justify-content: space-between;
 }
 
-.navbar-brand{
-    align-items: left;
-}
-
-.navbar-nav{
-    align-items: right;
-}
-
 li{
     list-style-type: none;
     text-align: right;
