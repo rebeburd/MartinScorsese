@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+/* HEADER */
+header {
+  background-color: darkgrey;
+  box-shadow: 0 0 15px black(0, 0, 0.5);
+  display: flex;
+  justify-content: space-between; }
+  header .navbar-navbar-expand-lgnavbar-darkbg-dark {
+    display: flex;
+    justify-content: space-between; }
+  header li {
+    list-style-type: none;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 5px;
+    display: inline;
+    color: white; }
+
+/* BODY */
+body {
+  background-color: ghostwhite; }
+  body #mainimage {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px black(0, 0, 0.5); }
+  body #subtitle1 {
+    text-align: center;
+    color: black; }
+
+/* INDEX */
+
+/* BIOGRAFIA */
+
+/* FILMOGRAFÍA */
+
+/* BIBLIOGRAFÍA */
+
+/* COMUNIDAD */
+
+/* FOOTER */
+footer {
+  background-color: black;
+  display: grid;
+  grid-column: 1fr;
+  grid-row: repeat(3, 1fr);
+  grid-template-areas: "
+ 1
+ 2
+ 3
+ "
+ ;
+  justify-items: center;
+  align-items: center; }
+  footer .credit {
+    text-align: center;
+    color: white; }
+  footer .socialmedia {
+    display: inline;
+    list-style-type: none;
+    text-align: center;
+    padding: 2%;
+    font-size: medium; }
+
+#gridfooter1 {
+  grid-area: 1;
+  align-self: center; }
+
+#gridfooter2 {
+  grid-area: 2;
+  align-self: center; }
+
+#gridfooter3 {
+  grid-area: 3;
+  align-self: center; }
+
+#logoig, #logotw {
+  color: white;
+  box-shadow: 0 0 15px black(0, 0, 0.5); }
+  #logoighover, #logotwhover {
+    background-color: purple;
+    box-shadow: 0 0 15px black(0, 0, 0.5);
+    transform: scale(2, 2);
+    border-radius: 50%; }

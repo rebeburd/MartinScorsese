@@ -1,0 +1,9 @@
+section#films{
+    display: flex;
+    justify-content: space-evenly;
+    overflow: scroll;
+    .poster{
+        width: 150px;
+        height: 275px;
+    }
+}

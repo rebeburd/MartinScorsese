@@ -1,0 +1,104 @@
+.gridhome1{
+    display: inline-grid;
+    width: 100%;
+    align-items: center;
+}
+
+.imghome {
+    width:350px;
+    height:150px;
+    box-shadow: 0 0 15px black(0,0,0.5);
+}
+
+.gridhome2{
+    .subtitle1{
+        text-align: center;
+    }
+    align-items: center;
+    @media screen and (min-width: 768px){
+        .gridhome2{
+            display: grid;
+            grid-row: repeat(2, 1fr);
+            grid-column: repeat(3, 1fr);
+            grid-template-areas:
+            "
+            1 2 3
+            4 5 6
+            "
+            ;
+            row-gap: 5%;
+            margin-right: 2%;
+            margin-left: 2%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            justify-content: center;
+            align-content: center;
+        }
+        
+        #gridhome2el1{
+            grid-area: 1 2 3;
+            text-align: center;
+            justify-content: center;
+            align-self: center;
+        }
+        
+        #gridhome2el2{
+            grid-area: 4;
+            text-align: center;
+            align-content: center;
+        }
+        
+        #gridhome2el3{
+            grid-area: 5;
+            text-align: center;
+            align-content: center;
+        }
+        
+        #gridhome2el4{
+            grid-area: 6;
+            text-align: center;
+            align-content: center;
+        }
+        
+        .gridhome2style{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .center{
+        margin: auto;  
+        width: 50%;
+        text-align: center;
+    }
+}
+
+.gridhome3{
+    display: grid;
+    grid-row: repeat(2,1fr);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    #gridhome3el1{
+        grid-template-rows: 1;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #gridhome3el2{
+        grid-template-rows: 2;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#comunidadhome{
+    background-color: purple;
+    .m-t{
+        margin-top: 2%;
+        padding-top: 3%;
+    }
+    
+    .m-b{
+        padding-bottom: 3%; 
+    }
+}
